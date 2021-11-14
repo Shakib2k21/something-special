@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Something For You</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="first-part">
+      <h2 id="title">তুমি রানা কে চিনো?</h2>
+      <div id="first-part-btn">
+        <a href="#" id="yes">হ্যা</a>
+      </div>
+    </div>
+
+    <div id="second-part">
+      <h2>কিভাবে চিনো?</h2>
+      <div id="part-tow-btn">
+        <a href="#" id="helove">ও আমাকে ভালোবাসে</a>
+        <a href="#" id="ilove"> আমি ওকে ভালোবাসি</a>
+      </div>
+    </div>
+
+    <div>
+      <div id="second-part-ans-one">
+        <h2>হুমম। ঠিক বলেছো। তাই তোমাকে রানা একটা কথা বলতে চায়।</h2>
+        <button href="#" onclick="play()">হুমম. বলো</button>
+      </div>
+
+      <div id="second-part-ans-two">
+        <h2>কিন্তুু তুমি ভালোবাসলে তো ব্লক করে চলে যেতে না।</h2>
+        <a href="#" id="sub-ans">আচ্ছা আমি ওকে সরি বলে নিবো।</a>
+      </div>
+    </div>
+
+    <div id="another-ans">
+      <h2>হুমম। তাহলে এখন শুনো রানা তোমাকে কি বলতে চায়।</h2>
+      <button onclick="play()">হুমম. বলো</button>
+    </div>
+
+    <div id="final">
+      <audio id="audio" src="Sorry.mp3"></audio>
+    </div>
+
+    <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
